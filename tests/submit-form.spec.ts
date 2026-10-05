@@ -31,6 +31,6 @@ test('submit Microsoft Form', async ({ page }) => {
   await page.locator('button[data-automation-id="submitButton"]').click();
 
   await expect(
-    page.getByText(/your response was submitted/i)
+    page.getByText(/registration is successful/i)
   ).toBeVisible({ timeout: 15_000 });
 });
