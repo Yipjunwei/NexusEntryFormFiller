@@ -35,10 +35,10 @@ Open [tests/submit-form.spec.ts](tests/submit-form.spec.ts) and edit the values 
 
 ## Running it on GitHub Actions
 
-The workflow at [.github/workflows/playwright.yml](.github/workflows/playwright.yml) runs the test automatically:
+The workflow at [.github/workflows/playwright.yml](.github/workflows/playwright.yml) only runs when triggered manually — it does **not** run on push or pull request, since every run submits a real form entry. Trigger it either:
 
-- On every push or pull request to `main`
-- On demand, via the **Actions** tab → "Playwright Tests" → **Run workflow**
+- From the **Actions** tab → "Playwright Tests" → **Run workflow**, or
+- From your iPhone, using the Shortcut below
 
 After a run finishes, open the run in the **Actions** tab and download the `playwright-report` artifact to see the HTML report (useful if it failed and you want the screenshot/video).
 
